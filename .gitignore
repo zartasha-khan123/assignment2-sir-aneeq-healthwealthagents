@@ -1,0 +1,34 @@
+# Ignore virtual environments
+backend/.venv/
+
+# Ignore node_modules
+frontend/node_modules/
+
+# Ignore other system files
+.DS_Store
+*.log
+.env
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+
+# Node
+node_modules/
+.next/
+.env.local
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
