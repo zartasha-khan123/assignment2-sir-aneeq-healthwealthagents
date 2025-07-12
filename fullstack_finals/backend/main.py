@@ -7,6 +7,7 @@ from my_agents.nutrition_expert_agent import nutrition_expert_agent
 from my_agents.injury_support_agent import injury_support_agent
 from my_agents.escalation import escalation_agent
 from agents import Runner
+
 app = FastAPI()
 
 # ✅ Allow requests from frontend (localhost:3000)

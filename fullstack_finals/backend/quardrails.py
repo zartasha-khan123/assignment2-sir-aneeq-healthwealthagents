@@ -45,7 +45,7 @@ async def health_input_guardrail(
     input: str | List[TResponseInputItem],
 ) -> GuardrailFunctionOutput:
     result = await Runner.run(
-        starting_agent=input_guard_agent,  # ✅ FIXED
+        starting_agent=input_guard_agent, 
         input=input,
         context=ctx.context,
         run_config=google_gemini_config,
