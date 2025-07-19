@@ -38,6 +38,7 @@ class ChatRequest(BaseModel):
 @app.post("/chat")
 async def chat_endpoint(data: ChatRequest):
     selected_agent = agent_map.get(data.expert, planner_agent)
+    print(f"Received request: {data}")
     try:
         result = await Runner.run(
             starting_agent=selected_agent,
